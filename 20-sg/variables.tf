@@ -26,3 +26,29 @@ variable "mysql_sg_tags" {
     }
   
 }
+
+variable "backend_sg_tags" {
+  
+   default = {
+        component = "backend"
+   }
+}
+
+variable "frontent_sg-tags" {
+  
+   default = {
+        component = "frontend"
+   }
+}
+
+
+variable "bastion_sg-tags" {
+  
+   default = {
+        component = "bastion"
+   }
+}
+
+variable "ansible_sg_tags" {
+  default = {}
+}
